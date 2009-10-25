@@ -1,0 +1,7 @@
+log
+config.ru
+tmp
+.project
+.buildpath
+config/deploy.rb
+db/*.sqlite3
