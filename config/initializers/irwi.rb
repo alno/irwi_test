@@ -1,0 +1,1 @@
+Irwi.config.paginator = Irwi::Paginators::WillPaginate.new
