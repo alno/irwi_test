@@ -9,7 +9,16 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20091025200051) do
+ActiveRecord::Schema.define(:version => 20100624082627) do
+
+  create_table "wiki_page_attachments", :force => true do |t|
+    t.integer  "page_id",                           :null => false
+    t.string   "wiki_page_attachment_file_name"
+    t.string   "wiki_page_attachment_content_type"
+    t.integer  "wiki_page_attachment_file_size"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
 
   create_table "wiki_page_versions", :force => true do |t|
     t.integer  "page_id",    :null => false
