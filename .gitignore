@@ -5,3 +5,5 @@ tmp
 .buildpath
 config/deploy.rb
 db/*.sqlite3
+.bundle
+vendor/bundler_gems
